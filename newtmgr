@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -e HOME=/workspace -ti --rm --device=/dev/bus/usb --privileged -v $(pwd):/workspace -w /workspace newt:latest /newtmgr "$@"
+docker run -e HOME=/workspace -ti --rm --device=/dev/bus/usb --privileged -v $(pwd):/workspace -w /workspace jacobrosenthal:3de95694ae3e35e6f27be03bfa215c740ccca051 /newtmgr "$@"
