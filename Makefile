@@ -20,4 +20,4 @@ newt-binary: clean
 newt: newt-binary
 	$(eval NEWT_VERSION := $(shell docker run --rm -v $(PWD)/_scratch:/_scratch -w /_scratch golang:$(GO_VERSION) ./newt version | cut -d: -f2))
 	docker build -t jacobrosenthal:$(NEWT_VERSION)-$(TOOLCHAIN_VERSION) -f Dockerfile .
-	docker tag jacobrosenthal:$(NEWT_VERSION)-$(TOOLCHAIN_VERSION) jacobrosenthal/newt:3de95694ae3e35e6f27be03bfa215c740ccca051
+	docker tag jacobrosenthal:$(NEWT_VERSION)-$(TOOLCHAIN_VERSION) jacobrosenthal/newt:682d29d80f66fd4331b04f81c20da12d1fdc1c20
