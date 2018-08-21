@@ -13,6 +13,7 @@ To build the newt docker image:
 ```
 make toolchain-image
 make newt
+docker push jacobrosenthal/newt:7a78e3579ce5d9edcceabe4c6c76ea2618317350
 ```
 
 The newt image is a small layer with the newt binary on top of a much larger

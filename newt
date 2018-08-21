@@ -5,4 +5,4 @@ then
     ti="-ti"
 fi
 
-docker run -e NEWT_USER=$(id -u) -e NEWT_GROUP=$(id -g) -ti --rm --device=/dev/bus/usb --privileged -v $(pwd):/workspace -w /workspace jacobrosenthal/newt:3de95694ae3e35e6f27be03bfa215c740ccca051 /newt "$@"
+docker run -e NEWT_USER=$(id -u) -e NEWT_GROUP=$(id -g) -ti --rm --device=/dev/bus/usb --privileged -v $(pwd):/workspace -w /workspace jacobrosenthal/newt:7a78e3579ce5d9edcceabe4c6c76ea2618317350 /newt "$@"
